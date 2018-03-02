@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Service;
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Icon;
 import android.os.Build;
@@ -136,9 +137,11 @@ public class myTileService extends android.service.quicksettings.TileService {
         else{
             Toast.makeText(this, getString(R.string.no_permisson), Toast.LENGTH_LONG).show();
             ClipboardManager clipboard = (ClipboardManager)
-                    getSystemService(this.CLIPBOARD_SERVICE);
+                    getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("Copied Text", String.format("%s\n%s",getText(R.string.command_helper),getText(R.string.command)));
-            clipboard.setPrimaryClip(clip);
+            if (clipboard != null) {
+                clipboard.setPrimaryClip(clip);
+            }
         }
     }
 }
