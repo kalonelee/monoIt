@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MonoIt</string>
+    <string name="color_it">ColorIt</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_permisson">Need Write_Secure_Settings Permisson.\nDetail has been copied to clipboard.</string>
+    <string name="command_helper">Please run following command on computer with adb tool installed.</string>
+    <string name="manufacturer">Manufacturer:</string>
+    <string name="model">Model:</string>
+    <string name="description">Switch Mono/Color</string>
+    <string name="error">Unknown Error</string>
+    <string name="command">adb shell pm grant net.kalone.monochrome android.permission.WRITE_SECURE_SETTINGS</string>
+</resources>

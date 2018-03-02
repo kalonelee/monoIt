@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">灰度化</string>
+    <string name="color_it">彩色化</string>
+    <string name="action_settings">设置</string>
+    <string name="no_permisson">需要写入安全设置的权限.\n方法在剪贴板中</string>
+    <string name="command_helper">请在装有adb工具的计算机上执行以下的命令.</string>
+    <string name="manufacturer">制造商: </string>
+    <string name="model">型号: </string>
+    <string name="description">切换色彩</string>
+    <string name="error">未知错误</string>
+    <string name="command">adb shell pm grant net.kalone.monochrome android.permission.WRITE_SECURE_SETTINGS</string>
+</resources>
